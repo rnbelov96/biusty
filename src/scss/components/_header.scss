@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.header__logo {
+  @media (max-width: 400px) {
+    margin-bottom: 10px;
+  }
+}
+
+.header__phone {
+  display: block;
+  font-size: 18px;
+  line-height: normal;
+  text-align: right;
+  margin-bottom: 5px;
+  color: white;
+
+  @media (max-width: 400px) {
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: white;
+  }
+}
+
+.header__callback {
+  @include reset-btn;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  color: #e14864;
+  text-decoration: underline;
+  margin-bottom: 0;
+}

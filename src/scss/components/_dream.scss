@@ -1,0 +1,143 @@
+.dream {
+  padding-bottom: 137px;
+  padding-top: 120px;
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.dream__title {
+  font-size: 45px;
+  line-height: 67px;
+  margin-bottom: 25px;
+  font-weight: 400;
+
+  span {
+    color: #d22d4b;
+    font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.dream__subtitle {
+  font-size: 18px;
+  line-height: 31px;
+  margin-bottom: 28px;
+  color: #282828;
+  @include max-width(574px);
+  position: relative;
+
+  &::after {
+    content: url('/src/img/dream-woman.png');
+    position: absolute;
+    right: -700px;
+    top: -230px;
+
+    @media (max-width: 1300px) {
+      right: -632px;
+    }
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+.dream__list {
+  @include reset-list;
+  margin-bottom: 170px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+}
+
+.dream__item {
+  padding-left: 45px;
+  font-size: 18px;
+  line-height: 31px;
+  color: #282828;
+  position: relative;
+  margin-bottom: 15px;
+
+  &::before {
+    content: url('/src/img/icons/check.png');
+    z-index: -1;
+    position: absolute;
+    top: 69%;
+    transform: translateY(-50%);
+    left: 0px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+}
+
+.dream__text {
+  margin-left: 450px;
+  font-size: 18px;
+  line-height: 31px;
+  color: #282828;
+  position: relative;
+  margin-bottom: 0;
+  @include max-width(560px);
+
+  &::before {
+    content: url('/src/img/dream-laptop.png');
+    z-index: -1;
+    position: absolute;
+    left: -470px;
+    top: -100px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    margin-left: 380px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+.dream__woman-img {
+  display: none;
+  @media (max-width: 991px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include max-width(500px);
+    margin-bottom: 30px;
+  }
+}
+
+.dream__laptop-img {
+  display: none;
+  @media (max-width: 991px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include max-width(418px);
+    margin-bottom: 20px;
+  }
+}

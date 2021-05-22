@@ -1,0 +1,126 @@
+.owner {
+  padding-top: 72px;
+  padding-bottom: 109px;
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+.owner__box {
+  background: #ffffff;
+  box-shadow: 10px 15px 35px rgba(162, 150, 150, 0.25), 0px 14px 0px rgba(235, 228, 228, 0.7);
+  border-radius: 23px;
+  position: relative;
+  padding-left: 124px;
+  padding-top: 50px;
+  padding-right: 97px;
+  padding-bottom: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1500px) {
+    padding-left: 50px;
+    padding-right: 30px;
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+  @media (max-width: 575px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+
+.owner__box-border {
+  position: absolute;
+  @include central-align;
+  width: 97%;
+  height: 95%;
+  border-radius: 23px;
+  border: 1px solid #E8E8E8;
+
+  @media (max-width: 991px) {
+    height: 97%;
+  }
+}
+
+.owner__text-box {
+  @include max-width(680px);
+
+  @media (max-width: 1200px) {
+    order: 2;
+    max-width: 100%;
+  }
+}
+
+.owner__title {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  color: #464646;
+  margin-bottom: 15px;
+
+  span {
+    font-weight: 600;
+    color: $dark-red;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+.owner__subtitle {
+  color: #868686;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 30px;
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.owner__text {
+  @include max-width(630px);
+  font-size: 18px;
+  line-height: 33px;
+  color: #282828;
+  margin-bottom: 0; 
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+.onwer__photo {
+  @media (max-width: 1500px) {
+    width: 400px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-bottom: 30px;
+    @include max-width(400px);
+  }
+}
+

@@ -14,8 +14,12 @@ main {
   max-width: 1274px;
   margin: 0 auto;
 
-  &_header {
-    background-color: white;
+  &_owner {
+    max-width: 1440px;
+
+    @media (max-width: 1500px) {
+      padding: 0 30px;
+    }
   }
 
   @media (max-width: 1300px) {

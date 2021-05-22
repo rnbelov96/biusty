@@ -1,0 +1,33 @@
+.button {
+  @include reset-btn;
+  background: linear-gradient(18.04deg, #ff3358 16.66%, #f74973 88.97%);
+  border-radius: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 15px 25px rgba(192, 96, 119, 0.4), 0px 7px 0px #C92048;
+  border: none;
+
+  img {
+    margin-right: 10px;
+  }
+
+  &:focus, &:hover, &:active {
+    box-shadow: none;
+    background: linear-gradient(18.04deg, #FF3F61 16.66%, #FF6489 88.97%);
+    position: relative;
+    top: 7px;
+  }
+
+  color: white;
+  font-weight: 700;
+  height: 79px;
+
+  &_line-form {
+    @include max-width(320px);
+  }
+
+  &_learn {
+    @include max-width(388px);
+  }
+}

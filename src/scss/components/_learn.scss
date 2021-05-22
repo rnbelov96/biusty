@@ -1,0 +1,99 @@
+.learn {
+  min-height: 935px;
+  @include bg;
+  background-image: url('/src/img/bgs/learn-bg.png');
+  padding-top: 110px;
+  padding-bottom: 104px;
+  overflow: hidden;
+}
+
+.learn__title {
+  margin-bottom: 43px;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  color: white;
+
+  span {
+    color: #fd385e;
+    font-weight: 600;
+  }
+}
+
+.learn__content {
+  @include max-width(543px);
+  margin-left: 590px;
+  color: white;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url('/src/img/learn-woman.png');
+    top: -451px;
+    left: -913px;
+    z-index: -1;
+
+    @media (max-width: 1200px) {
+      left: -810px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.learn__text {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 31px;
+
+  &_last {
+    margin-bottom: 40px;
+  }
+}
+
+.learn__list {
+  @include reset-list;
+  margin-bottom: 33px;
+}
+
+.learn__item {
+  height: 76.5px;
+  padding-left: 96px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+  font-size: 18px;
+  line-height: 31px;
+  position: relative;
+
+  &:nth-child(1)::before {
+    content: url('/src/img/icons/learn-icon-1.png');
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  &:nth-child(2)::before {
+    content: url('/src/img/icons/learn-icon-2.png');
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    &::before {
+      content: url('/src/img/icons/learn-icon-3.png');
+      position: absolute;
+      top: 56%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+}
