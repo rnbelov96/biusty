@@ -29,5 +29,18 @@
 
   &_learn {
     @include max-width(388px);
+
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &_formats {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }

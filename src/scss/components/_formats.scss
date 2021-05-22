@@ -1,0 +1,190 @@
+.formats {
+  padding-top: 100px;
+  padding-bottom: 119px;
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+.formats__title {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 67px;
+  margin-bottom: 40px;
+  margin-left: 130px;
+
+  span {
+    font-weight: 600;
+    color: $dark-red;
+  }
+
+  @media (max-width: 1300px) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.formats__list {
+  @include reset-list;
+  display: flex;
+  position: relative;
+  margin-left: 130px;
+  &::before {
+    content: url('/src/img/label.png');
+    position: absolute;
+    z-index: -1;
+    left: -290px;
+    bottom: 60px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: url('/src/img/underwear.jpg');
+    position: absolute;
+    z-index: -1;
+    right: -323px;
+    top: -176px;
+    @media (max-width: 1300px) {
+      right: -369px;
+    }
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.formats__item {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 5px 8px 30px rgba(140, 140, 140, 0.25);
+  border-radius: 33px;
+  width: 410px;
+  min-height: 605px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+}
+
+.formats__item-border {
+  width: 95%;
+  height: 97%;
+  border-radius: 33px;
+  border: 1px solid #e9e2e2;
+  position: absolute;
+  pointer-events: none;
+  @include central-align;
+}
+
+.formats__label {
+  background: linear-gradient(360deg, #f74973 0%, #ff6388 100%);
+  border-radius: 22px;
+  width: 138px;
+  height: 31px;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formats__people-number {
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 5px;
+}
+
+.formats__people-label {
+  color: #b0b0b0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.formats__devider {
+  width: 162px;
+  height: 1px;
+  background: #dad7d8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.formats__numbers-row {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.formats__numbers-label {
+  width: 60%;
+  font-size: 18px;
+  color: #171717;
+  line-height: normal;
+}
+
+.formats__numbers-digit {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  color: #4a4a4a;
+}

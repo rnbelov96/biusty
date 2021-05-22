@@ -1,0 +1,178 @@
+.steps {
+  min-height: 936px;
+  background-color: #f1f1f1;
+  @include bg;
+  background-image: url('/src/img/bgs/steps-bg.png');
+  padding-top: 95px;
+  padding-bottom: 175px;
+
+  @media (max-width: 991px) {
+    background-image: none;
+    min-height: 0;
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
+}
+
+.steps__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  color: #333333;
+  margin-bottom: 90px;
+  position: relative;
+
+  span {
+    font-weight: 600;
+    color: $light-red;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 77px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &::before {
+    content: url('/src/img/ribbon.png');
+    position: absolute;
+    left: -325px;
+    top: -265px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+}
+
+.steps__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 706px;
+    height: 1px;
+    background-color: #ffb3c5;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -13px;
+    z-index: 1;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.steps__item {
+  width: 325px;
+  background: #ffffff;
+  box-shadow: 10px 15px 25px rgba(220, 220, 220, 0.25);
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  padding-left: 26px;
+  padding-top: 42px;
+  padding-right: 16px;
+  min-height: 443px;
+  margin-right: 22px;
+
+  @media (max-width: 991px) {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 60px;
+  }
+
+  &:nth-child(1) {
+    background-image: url('/src/img/steps-tablet.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &:nth-child(2) {
+    background-image: url('/src/img/steps-biust.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &:nth-child(3) {
+    background-image: url('/src/img/steps-box.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-right: 0;
+  }
+}
+
+.steps__item-number {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 42px;
+  margin-bottom: 10px;
+  color: #434343;
+}
+
+.steps__item-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  margin-bottom: 0;
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+  }
+}
+
+.steps__item-border {
+  position: absolute;
+  border-radius: 16px;
+  border: 1px solid #e8e8e8;
+  @include central-align;
+  width: 97%;
+  height: 97%;
+}
+
+.steps__label {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate3d(-50%, -65%, 0);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps__label-number {
+  background: linear-gradient(180deg, #fe517b 0%, #fe3364 100%);
+  box-shadow: 0px 0px 20px rgba(247, 93, 130, 0.6);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  font-size: 22px;
+  line-height: normal;
+  z-index: 2;
+}
