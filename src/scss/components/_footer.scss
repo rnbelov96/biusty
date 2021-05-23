@@ -1,0 +1,157 @@
+.footer {
+  background: #222222;
+  padding-top: 61px;
+  padding-bottom: 52px;
+
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.footer__top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: 991px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__top-left-box {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__company-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 116px;
+
+  @media (max-width: 991px) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 25px;
+  }
+}
+
+.footer__company-name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  color: white;
+  margin-bottom: 5px;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.footer__policy-btn {
+  @include reset-btn;
+  color: white;
+  font-size: 16px;
+}
+
+.footer__contacts-label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer__contacts-list {
+  @include reset-list;
+}
+
+.footer__contacts-item {
+  padding-left: 47px;
+  margin-bottom: 21px;
+  font-size: 16px;
+  color:white;
+  position: relative;
+
+  &:nth-child(1)::before {
+    content: url('/src/img/icons/location.png');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+  }
+  &:nth-child(2)::before {
+    content: url('/src/img/icons/email.png');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+  }
+  &:nth-child(3)::before {
+    content: url('/src/img/icons/insta.png');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+  }
+}
+
+.footer__phone-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__phone {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+
+  &:focus, &:active, &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+}
+
+.footer__callback-btn {
+  @include reset-btn;
+  color: #F74771;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.footer__devider {
+  margin-top: 25px;
+  margin-bottom: 34px;
+  width: 100%;
+  height: 1px;
+  background: #444444;
+}
+
+.footer__franch5-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+
+  &:focus, &:active, &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}

@@ -98,6 +98,10 @@
   margin-bottom: 0;
   @include max-width(560px);
 
+  span {
+    font-weight: 500;
+  }
+
   &::before {
     content: url('/src/img/dream-laptop.png');
     z-index: -1;

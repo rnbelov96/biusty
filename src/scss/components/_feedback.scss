@@ -1,0 +1,112 @@
+.feedback {
+  min-height: 952px;
+  @include bg;
+  background-image: url('/src/img/bgs/feedback-bg.jpg');
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 991px) {
+    min-height: auto;
+  }
+}
+
+.feedback__title {
+  @include max-width(785px);
+  color: #fcfcfc;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  margin-bottom: 40px;
+
+  span {
+    font-weight: 600;
+    color: #ff3364;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    line-height: 42px;
+  }
+}
+
+.feedback__form {
+  @include max-width(483px);
+  border: 1px solid #696969;
+  border-radius: 21px;
+  background-color: transparent;
+  min-height: 600px;
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 47px;
+
+  @media (max-width: 575px) {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.feedback__input-label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  line-height: normal;
+}
+
+.feedback__input-box {
+  margin-bottom: 25px;
+}
+
+.feedback__input {
+  background: #ffffff;
+  border-radius: 15px;
+  padding-left: 23px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid transparent;
+
+  color: #242424;
+
+  &::-webkit-input-placeholder {
+    color: #686868;
+  }
+
+  &::-moz-placeholder {
+    color: #686868;
+  }
+
+  &:-ms-input-placeholder {
+    color: #686868;
+  }
+
+  &:-moz-placeholder {
+    color: #686868;
+  }
+}
+
+.feedback__policy-text {
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.feedback__policy-btn {
+  @include reset-btn;
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}

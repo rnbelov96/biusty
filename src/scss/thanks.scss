@@ -4,6 +4,9 @@
 @import './base/mixins.scss';
 @import './base/global.scss';
 @import './components/modal.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/button.scss';
 
 .thanks,
 .error {
@@ -12,7 +15,8 @@
   flex-direction: column;
 
   &__body {
-    background-color: white;
+    @include bg;
+    background-image: url('/src/img/bgs/thanks-bg.jpg');
   }
 
   &__body,
@@ -55,7 +59,7 @@
   }
 
   &__title {
-    color: black;
+    color: white;
     font-size: 28px;
     font-weight: 500;
     text-align: center;
@@ -69,7 +73,7 @@
   &__subtitle {
     margin-top: 40px;
     margin-bottom: 20px;
-    color: black;
+    color: white;
     font-size: 18px;
     text-align: center;
   }

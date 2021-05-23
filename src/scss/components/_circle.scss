@@ -1,0 +1,363 @@
+.circle {
+  padding-bottom: 273px;
+
+  @media (max-width: 1300px) {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 40px;
+  }
+}
+
+.circle__title {
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 45px;
+  line-height: 61px;
+  color: #424242;
+
+  span {
+    color: #d22d4b;
+    font-weight: 600;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 33px;
+    line-height: 53px;
+    margin-bottom: 20px;
+  }
+}
+
+.circle__text {
+  font-size: 36px;
+  padding-left: 100px;
+  margin-bottom: 205px;
+  line-height: 49px;
+  color: #232323;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 86px;
+    height: 1px;
+    background: #ff3364;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 575px) {
+      width: 50px;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    padding-left: 69px;
+    margin-bottom: 30px;
+  }
+}
+
+.circle__list {
+  @include reset-list;
+  width: 685px;
+  height: 685px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 1px solid #fedae3;
+  background-color: transparent;
+  position: relative;
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.circle__img {
+  position: absolute;
+  @include central-align;
+  top: 51%;
+  left: 53%;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.circle__item {
+  width: 329px;
+  height: 170px;
+  position: relative;
+  z-index: 2;
+  color: #1c1c1c;
+  text-align: center;
+  font-size: 17px;
+  line-height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_left .circle__item-bg {
+    transform: translate3d(-50%, -50%, 0) skewY(4deg);
+
+    @media (max-width: 767px) {
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+
+  &_right .circle__item-bg {
+    transform: translate3d(-50%, -50%, 0) skewY(-4deg);
+
+    @media (max-width: 767px) {
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+
+  &:nth-child(1) {
+    position: absolute;
+    top: -133px;
+    left: -170px;
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: -41px;
+      right: -25px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(2) {
+    position: absolute;
+    top: -133px;
+    right: -170px;
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: -41px;
+      left: -25px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(3) {
+    position: absolute;
+    top: 120px;
+    left: -307px;
+
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: 32px;
+      right: -37px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(4) {
+    position: absolute;
+    top: 120px;
+    right: -306px;
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: 32px;
+      left: -37px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(5) {
+    position: absolute;
+    top: 378px;
+    left: -306px;
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: 50px;
+      right: -37px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(6) {
+    position: absolute;
+    top: 378px;
+    right: -306px;
+
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: 50px;
+      left: -37px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(7) {
+    position: absolute;
+    top: 628px;
+    left: -170px;
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: 124px;
+      right: -29px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(8) {
+    position: absolute;
+    top: 628px;
+    right: -170px;
+    &::before {
+      content: url('/src/img/icons/circle-dot.png');
+      position: absolute;
+      bottom: 124px;
+      left: -29px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 767px) {
+    @include max-width(329px);
+  }
+}
+
+.circle__item-bg {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(167, 159, 159, 0.25);
+  border-radius: 17px;
+  position: absolute;
+  @include central-align;
+  z-index: -1;
+}
+
+.circle__item-border {
+  width: 96%;
+  height: 93%;
+  position: absolute;
+
+  @include central-align;
+
+  border: 1px solid #eeeeee;
+  border-radius: 17px;
+}
+
+.circle__full-img {
+  display: none;
+
+  @media (max-width: 1300px) {
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}

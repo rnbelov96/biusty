@@ -43,4 +43,20 @@
     margin-right: auto;
     display: block;
   }
+
+  &_feedback {
+    width: 100%;
+  }
+
+  &_calc {
+    @include max-width(317px);
+  }
+
+  &_modal-form {
+    width: 100%;
+  }
+
+  &_thanks {
+    width: 300px;
+  }
 }

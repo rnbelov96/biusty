@@ -10,7 +10,8 @@
 
 .owner__box {
   background: #ffffff;
-  box-shadow: 10px 15px 35px rgba(162, 150, 150, 0.25), 0px 14px 0px rgba(235, 228, 228, 0.7);
+  box-shadow: 10px 15px 35px rgba(162, 150, 150, 0.25),
+    0px 14px 0px rgba(235, 228, 228, 0.7);
   border-radius: 23px;
   position: relative;
   padding-left: 124px;
@@ -20,6 +21,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &::after {
+    position: absolute;
+    content: url('/src/img/learn-doll.png');
+    bottom: -294px;
+    right: -183px;
+
+    @media (max-width: 991px) {
+      content: none;
+    }
+  }
 
   @media (max-width: 1500px) {
     padding-left: 50px;
@@ -46,7 +58,7 @@
   width: 97%;
   height: 95%;
   border-radius: 23px;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
 
   @media (max-width: 991px) {
     height: 97%;
@@ -102,7 +114,40 @@
   font-size: 18px;
   line-height: 33px;
   color: #282828;
-  margin-bottom: 0; 
+  margin-bottom: 0;
+  position: relative;
+
+  &::before {
+    content: url('/src/img/icons/quotes-top.png');
+    position: absolute;
+    top: -12px;
+    left: -51px;
+
+    @media (max-width: 1200px) {
+      top: -25px;
+      left: -25px;
+    }
+
+    @media (max-width: 575px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: url('/src/img/icons/quotes-bottom.png');
+    position: absolute;
+    bottom: -20px;
+    right: -34px;
+
+    @media (max-width: 1200px) {
+      bottom: -30px;
+      right: -4px;
+    }
+
+    @media (max-width: 575px) {
+      content: none;
+    }
+  }
 
   @media (max-width: 1200px) {
     max-width: 100%;
@@ -123,4 +168,3 @@
     @include max-width(400px);
   }
 }
-

@@ -6,8 +6,20 @@
     <title>Спасибо! Ваша заявка принята</title>
   </head>
   <body class="thanks__body">
-    <header class="header">
-    </header>
+    <div class="container thanks__header">
+      <header class="header">
+        <img
+          src="./img/icons/logo.png"
+          alt="Логотип компании"
+          class="header__logo"
+        />
+        <div class="header__contact-box">
+          <a href="tel:+7800000000" class="header__phone"
+            >8 (800) 000-00-00</a
+          >
+        </div>
+      </header>
+    </div>
     <section class="thanks">
       <div class="thanks__content">
         <div class="container">
@@ -34,7 +46,40 @@
           </div>
         </div>
       </div>
-      <footer class="footer footer__thanks">
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top-box">
+            <div class="footer__top-left-box">
+              <div class="footer__company-box">
+                <p class="footer__company-name">MyBiUSTY &#169; 2021</p>
+                <button class="footer__policy-btn js-policy">
+                  Политика конфиденциальности
+                </button>
+              </div>
+              <div class="footer__contacts-box">
+                <p class="footer__contacts-label">Контакты</p>
+                <ul class="footer__contacts-list">
+                  <li class="footer__contacts-item">
+                    г. Санкт-Петербург, Московский <br />
+                    проспект, 109
+                  </li>
+                  <li class="footer__contacts-item">Info@gmail.com</li>
+                  <li class="footer__contacts-item">my.biusty</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__phone-box">
+              <a href="tel:+" class="footer__phone">8 (800) 000-00-00</a
+              ><button class="footer__callback-btn js-callback">
+                Бесплатная консультация
+              </button>
+            </div>
+          </div>
+          <div class="footer__devider"></div>
+          <a href="https://франчайзинг5.рф" class="footer__franch5-link"
+            >Франчайзинг 5 - упаковка и продвижение франшиз
+          </a>
+        </div>
       </footer>
     </section>
   </body>

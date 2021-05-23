@@ -4,7 +4,8 @@
   background-image: url('/src/img/bgs/learn-bg.png');
   padding-top: 110px;
   padding-bottom: 104px;
-  overflow: hidden;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: 991px) {
     padding-bottom: 0;

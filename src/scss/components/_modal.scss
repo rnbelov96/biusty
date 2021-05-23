@@ -43,23 +43,24 @@
   &::after {
     position: absolute;
     z-index: 2;
-    top: 5px;
-    right: 5px;
-    width: 30px;
-    height: 30px;
+    top: 10px;
+    right: 15px;
+    width: 43px;
+    height: 43px;
     box-sizing: border-box;
     border-width: 0;
     background-color: transparent;
     border-radius: 50%;
-    color: rgb(136, 136, 136);
+    color: #FF3364;
     content: '×';
-    font: 300 22px / 30px 'HelveticaNeueCyr', sans-serif;
+    font: 300 48px / 43px 'HelveticaNeueCyr', sans-serif;
     text-align: center;
-    transition: background-color 0.25s ease 0s;
+    background: #EEEEEE;
   }
 
   &:hover,
   &:focus {
+    outline: none;
     &::after {
       background-color: rgba(194, 194, 194, 0.6);
       color: black;

@@ -2,13 +2,29 @@
 
 const validateForm = form => {
   const nameInputEl = form.querySelector('[data-type="name"]');
+  const cityInputEl = form.querySelector('[data-type="city"]');
   const phoneInputEl = form.querySelector('[data-type="phone"]');
   const emailInputEl = form.querySelector('[data-type="email"]');
 
   let isOk = true;
 
+  if (nameInputEl && nameInputEl.value === '') {
+    nameInputEl.classList.add('input-error');
+    isOk = false;
+  }
+
+  if (cityInputEl && cityInputEl.value === '') {
+    cityInputEl.classList.add('input-error');
+    isOk = false;
+  }
+
   if (phoneInputEl.value === '') {
     phoneInputEl.classList.add('input-error');
+    isOk = false;
+  }
+
+  if (emailInputEl.value === '') {
+    emailInputEl.classList.add('input-error');
     isOk = false;
   }
 
@@ -25,16 +41,7 @@ const validateForm = form => {
     isOk = false;
   }
 
-  if (isOk) {
-    if (nameInputEl) {
-      localStorage.setItem('userName', nameInputEl.value);
-    } else {
-      localStorage.setItem('userName', '');
-    }
-
-    return true;
-  }
-  return false;
+  return isOk;
 };
 
 function objectifyForm(formArray) {
