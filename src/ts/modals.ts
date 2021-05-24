@@ -3,13 +3,13 @@ export {};
 
 const modalFormInfoList = [
   {
-    title: 'и получите презентацию франшизы',
+    title: 'получите презентацию франшизы',
   },
   {
-    title: 'и получите подробный план',
+    title: 'получите подробный план',
   },
   {
-    title: 'и узнайте больше о вариантах франшизы',
+    title: 'узнайте больше о вариантах франшизы',
   },
 ];
 
@@ -30,7 +30,7 @@ const openModal = (modalEl: HTMLDivElement) => {
 const modalElList = document.querySelectorAll('.modal');
 const [formModalEl, policyModalEl, youtubeAdvModalEl] = modalElList;
 
-const formTitleEl = formModalEl.querySelector('.js-modal-form-title') as HTMLHeadingElement;
+const formTitleEl = document.querySelector('.js-modal-form-title') as HTMLHeadingElement;
 
 const modalWrapperElList = document.querySelectorAll('.modal__center-wrapper');
 modalElList.forEach(modalEl => {
