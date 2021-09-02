@@ -35,24 +35,16 @@
     display: flex;
     justify-content: space-between;
     touch-action: pan-y;
-    transform: translate3d(-400%, 0, 0);
     user-select: none;
   }
 
   &__img-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 98%;
     flex-shrink: 0;
-    margin: 0% 1%;
 
     img {
       pointer-events: none;
-    }
-
-    @media (max-width: 575px) {
-      justify-content: center;
     }
   }
 
